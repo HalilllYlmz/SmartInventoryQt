@@ -15,7 +15,7 @@
 
 Sensör verileri güvenli aralıkta iken gösterge normal şekilde çalışır.
 
-![Normal Dashboard](images/normal.png)
+![Normal Dashboard](Images/normal.png)
 
 ---
 
@@ -23,7 +23,7 @@ Sensör verileri güvenli aralıkta iken gösterge normal şekilde çalışır.
 
 Sıcaklık kritik seviyeye ulaştığında (>80°C) arayüz görsel uyarı verir.
 
-![Critical Dashboard](images/critical.png)
+![Critical Dashboard](Images/critical.png)
 
 ---
 
@@ -31,7 +31,7 @@ Sıcaklık kritik seviyeye ulaştığında (>80°C) arayüz görsel uyarı verir
 
 Sistemde kayıtlı tüm cihazlar liste halinde görüntülenir.
 
-![Device List](images/list.png)
+![Device List](Images/list.png)
 
 ---
 
@@ -39,7 +39,7 @@ Sistemde kayıtlı tüm cihazlar liste halinde görüntülenir.
 
 Cihazlar isim veya seri numarasına göre anında filtrelenebilir.
 
-![Search](images/search.png)
+![Search](Images/search.png)
 
 ---
 
@@ -47,7 +47,7 @@ Cihazlar isim veya seri numarasına göre anında filtrelenebilir.
 
 Durum veya kriterlere göre cihazlar filtrelenebilir.
 
-![Filter](images/filter.png)
+![Filter](Images/filter.png)
 
 ---
 
@@ -55,7 +55,7 @@ Durum veya kriterlere göre cihazlar filtrelenebilir.
 
 Modern giriş ekranı ile yeni cihaz ekleme işlemi yapılabilir.
 
-![Add Device](images/add.png)
+![Add Device](Images/add.png)
 
 ---
 
@@ -63,7 +63,7 @@ Modern giriş ekranı ile yeni cihaz ekleme işlemi yapılabilir.
 
 Cihaz bilgileri güncellenebilir veya sistemden kaldırılabilir.
 
-![Update Delete](images/update-delete.png)
+![Update Delete](Images/update-delete.png)
 
 ---
 
