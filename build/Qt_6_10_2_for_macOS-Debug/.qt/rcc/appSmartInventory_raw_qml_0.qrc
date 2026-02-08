@@ -6,6 +6,7 @@
     <file alias="Components/NavButton.qml">/Users/halilyilmaz/SmartInventory/Components/NavButton.qml</file>
     <file alias="Pages/DeviceListScreen.qml">/Users/halilyilmaz/SmartInventory/Pages/DeviceListScreen.qml</file>
     <file alias="Components/DeviceListItem.qml">/Users/halilyilmaz/SmartInventory/Components/DeviceListItem.qml</file>
+    <file alias="Components/AddDeviceDialog.qml">/Users/halilyilmaz/SmartInventory/Components/AddDeviceDialog.qml</file>
   </qresource>
 </RCC>
 

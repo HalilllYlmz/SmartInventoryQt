@@ -82,7 +82,7 @@ Rectangle {
             RowLayout {
                 spacing: 5
                 Text {
-                    text: "📅" // Takvim ikonu
+                    text: "📅"
                     font.pixelSize: 12
                 }
                 Text {
@@ -93,58 +93,60 @@ Rectangle {
             }
         }
 
+
+
         ToolButton {
-                    id: menuButton
-                    text: "⋮"
-                    font.pixelSize: 24
-                    font.bold: true
-                    Layout.alignment: Qt.AlignRight | Qt.AlignVCenter
+            id: menuButton
+            text: "⋮"
+            font.pixelSize: 24
+            font.bold: true
+            Layout.alignment: Qt.AlignRight | Qt.AlignVCenter
 
-                    background: Rectangle {
-                        color: parent.down ? "#ecf0f1" : "transparent"
-                        radius: 5
-                    }
+            background: Rectangle {
+                color: parent.down ? "#ecf0f1" : "transparent"
+                radius: 5
+            }
 
-                    onClicked: {
-                        if (!menuBlocker.running) {
-                            optionsMenu.open()
-                        }
-                    }
+            onClicked: {
+                if (!menuBlocker.running) {
+                    optionsMenu.open()
+                }
+            }
 
-                    Timer {
-                        id: menuBlocker
-                        interval: 100
-                    }
+            Timer {
+                id: menuBlocker
+                interval: 100
+            }
 
-                    Menu {
-                        id: optionsMenu
-                        y: parent.height
-                        x: parent.width - width
+            Menu {
+                id: optionsMenu
+                y: parent.height
+                x: parent.width - width
 
-                        onClosed: {
-                            menuBlocker.start()
-                        }
-
-                        MenuItem {
-                            text: "✏️ Güncelle"
-                            onTriggered: root.editClicked()
-                        }
-
-                        MenuSeparator {}
-
-                        MenuItem {
-                            text: "🗑️ Sil"
-                            contentItem: Text {
-                                text: parent.text
-                                color: "#e74c3c"
-                                font: parent.font
-                                horizontalAlignment: Text.AlignLeft
-                                verticalAlignment: Text.AlignVCenter
-                            }
-                            onTriggered: root.deleteClicked()
-                        }
-                    }
+                onClosed: {
+                    menuBlocker.start()
                 }
 
-       }
+                MenuItem {
+                    text: "✏️ Güncelle"
+                    onTriggered: root.editClicked()
+                }
+
+                MenuSeparator {}
+
+                MenuItem {
+                    text: "🗑️ Sil"
+                    contentItem: Text {
+                        text: parent.text
+                        color: "#e74c3c"
+                        font: parent.font
+                        horizontalAlignment: Text.AlignLeft
+                        verticalAlignment: Text.AlignVCenter
+                    }
+                    onTriggered: root.deleteClicked()
+                }
+            }
+        }
+
+    }
 }

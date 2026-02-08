@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-d9a4a09bf95852528141.json",
+					"jsonFile" : "directory-.-Debug-bb87348facea3814940e.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -72,7 +72,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "all_aotstats::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-all_aotstats-Debug-1e2c0ed7613db471db37.json",
+					"jsonFile" : "target-all_aotstats-Debug-797fae520f4b42a7496e.json",
 					"name" : "all_aotstats",
 					"projectIndex" : 0
 				},
@@ -107,7 +107,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "appSmartInventory::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-appSmartInventory-Debug-9032a22cca572bd46bcc.json",
+					"jsonFile" : "target-appSmartInventory-Debug-aecbe4d04976ed35ae7c.json",
 					"name" : "appSmartInventory",
 					"projectIndex" : 0
 				},
@@ -184,7 +184,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "module_appSmartInventory_aotstats_target::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-module_appSmartInventory_aotstats_target-Debug-cc869cb3c2d1d5bffab7.json",
+					"jsonFile" : "target-module_appSmartInventory_aotstats_target-Debug-31c77142edffde58e829.json",
 					"name" : "module_appSmartInventory_aotstats_target",
 					"projectIndex" : 0
 				}

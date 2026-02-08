@@ -24,10 +24,16 @@ function addDevice(deviceObj, callback) {
 
     xhr.onreadystatechange = function() {
         if (xhr.readyState === XMLHttpRequest.DONE) {
+            // Başarı durumlarını kontrol et (200 OK veya 201 Created)
             if (xhr.status === 201 || xhr.status === 200) {
-                callback();
+                console.log("✅ API Başarılı!");
+                // --- İŞTE EKSİK OLAN KISIM BURASIYDI ---
+                if (callback) callback(true);
+                // ---------------------------------------
             } else {
-                console.log("Add Error: " + xhr.status + " " + xhr.responseText);
+                console.error("❌ API Hatası: " + xhr.status + " " + xhr.responseText);
+                // Hata durumunda false dönüyoruz
+                if (callback) callback(false);
             }
         }
     }

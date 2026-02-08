@@ -47,6 +47,13 @@ namespace _qt_qml_SmartInventory_Components_DeviceListItem_qml {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
+namespace _qt_qml_SmartInventory_Components_AddDeviceDialog_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
 
 }
 namespace {
@@ -67,6 +74,7 @@ Registry::Registry() {
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/SmartInventory/Components/NavButton.qml"), &QmlCacheGeneratedCode::_qt_qml_SmartInventory_Components_NavButton_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/SmartInventory/Pages/DeviceListScreen.qml"), &QmlCacheGeneratedCode::_qt_qml_SmartInventory_Pages_DeviceListScreen_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/SmartInventory/Components/DeviceListItem.qml"), &QmlCacheGeneratedCode::_qt_qml_SmartInventory_Components_DeviceListItem_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/SmartInventory/Components/AddDeviceDialog.qml"), &QmlCacheGeneratedCode::_qt_qml_SmartInventory_Components_AddDeviceDialog_qml::unit);
     QQmlPrivate::RegisterQmlUnitCacheHook registration;
     registration.structVersion = 0;
     registration.lookupCachedQmlUnit = &lookupCachedUnit;

@@ -1,14 +1,13 @@
 import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
+import QtQuick.Effects
 import "../Scripts/DeviceApi.js" as Api
 import "../Components"
 
 Item {
     id: rootItem
-
     property var allDevices: []
-
     ListModel { id: deviceModel }
 
     Component.onCompleted: refreshList()
@@ -22,23 +21,17 @@ Item {
         })
     }
 
-
     function applyFilter() {
         deviceModel.clear()
-
         var searchTerm = searchField.text.toLowerCase()
         var statusFilter = statusComboBox.currentText
-
         var sortAscending = sortButton.checked
 
         var filteredList = rootItem.allDevices.filter(function(device) {
             var nameMatch = (device.deviceName || "").toLowerCase().includes(searchTerm)
             var serialMatch = (device.serialNumber || "").toLowerCase().includes(searchTerm)
-            var searchMatch = nameMatch || serialMatch
-
             var statusMatch = (statusFilter === "Tümü") || (device.status === statusFilter)
-
-            return searchMatch && statusMatch
+            return (nameMatch || serialMatch) && statusMatch
         })
 
         filteredList.sort(function(a, b) {
@@ -55,16 +48,24 @@ Item {
     }
 
     ColumnLayout {
+        id: mainContent
         anchors.fill: parent
         anchors.margins: 20
         spacing: 15
+
+        layer.enabled: addDeviceDialog.opened
+        layer.effect: MultiEffect {
+            blurEnabled: true
+            blurMax: 32
+            saturation: 0.5
+        }
 
         RowLayout {
             Layout.fillWidth: true
             Text {
                 text: "Cihaz Listesi"
                 font.bold: true
-                font.pixelSize: 24
+                font.pixelSize: 26
                 color: "#2c3e50"
                 Layout.fillWidth: true
             }
@@ -72,9 +73,13 @@ Item {
             Button {
                 text: "+ Yeni Cihaz"
                 font.bold: true
-                palette.button: "#3498db"
-                palette.buttonText: "white"
-
+                // Buton Tasarımı
+                background: Rectangle {
+                    color: parent.down ? "#2980b9" : "#3498db"
+                    radius: 12
+                    layer.enabled: true
+                    layer.effect: MultiEffect { shadowEnabled: true; shadowOpacity: 0.2; shadowVerticalOffset: 3 }
+                }
                 contentItem: Text {
                     text: parent.text
                     color: "white"
@@ -82,56 +87,40 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
                 }
-
-                background: Rectangle {
-                    color: parent.down ? "#2980b9" : "#3498db"
-                    radius: 8
-                }
-
-                onClicked: {
-                    // TODO
-                }
+                onClicked: addDeviceDialog.open()
             }
         }
 
-
         RowLayout {
             Layout.fillWidth: true
-            spacing: 10
+            spacing: 12
 
             TextField {
                 id: searchField
                 placeholderText: "🔍 Cihaz ara..."
                 Layout.fillWidth: true
-                Layout.preferredHeight: 40
-
+                Layout.preferredHeight: 48
                 verticalAlignment: Text.AlignVCenter
-
                 leftPadding: 15
-                rightPadding: 15
-
-
                 background: Rectangle {
                     color: "white"
-                    border.color: parent.activeFocus ? "#3498db" : "#bdc3c7"
-                    radius: 8
+                    border.color: parent.activeFocus ? "#3498db" : "#dfe6e9"
+                    border.width: parent.activeFocus ? 2 : 1
+                    radius: 12
                 }
-
                 onTextChanged: applyFilter()
             }
 
             ComboBox {
                 id: statusComboBox
-                Layout.preferredWidth: 150
-                Layout.preferredHeight: 40
+                Layout.preferredWidth: 160
+                Layout.preferredHeight: 48
                 model: ["Tümü", "Aktif", "Pasif", "Bakımda", "Arızalı"]
-
                 onCurrentTextChanged: applyFilter()
-
                 background: Rectangle {
                     color: "white"
-                    border.color: "#bdc3c7"
-                    radius: 8
+                    border.color: "#dfe6e9"
+                    radius: 12
                 }
             }
 
@@ -141,24 +130,23 @@ Item {
                 checked: true
                 text: checked ? "A ⬇" : "Z ⬆"
                 Layout.preferredWidth: 60
-                Layout.preferredHeight: 40
-
+                Layout.preferredHeight: 48
                 background: Rectangle {
                     color: "white"
-                    border.color: "#bdc3c7"
-                    radius: 8
+                    border.color: "#dfe6e9"
+                    radius: 12
                 }
-
                 onClicked: applyFilter()
             }
         }
 
+        // Liste
         ListView {
             Layout.fillWidth: true
             Layout.fillHeight: true
             clip: true
             model: deviceModel
-            spacing: 10
+            spacing: 12
 
             Text {
                 anchors.centerIn: parent
@@ -172,21 +160,39 @@ Item {
 
             delegate: DeviceListItem {
                 width: ListView.view.width
-
                 deviceName: model.deviceName || model.DeviceName
                 serialNumber: model.serialNumber || model.SerialNumber
                 status: model.status || model.Status
                 maintenanceDate: model.lastMaintenanceDate
 
                 onEditClicked: console.log("Güncelle:", model.id || model.Id)
-
                 onDeleteClicked: {
                     var deleteId = model.id || model.Id
-                    Api.deleteDevice(deleteId, function() {
-                        refreshList()
-                    })
+                    Api.deleteDevice(deleteId, function() { refreshList() })
                 }
             }
+        }
+    }
+
+    Rectangle {
+        anchors.fill: parent
+        color: "black"
+        opacity: addDeviceDialog.opened ? 0.5 : 0.0
+
+        Behavior on opacity { NumberAnimation { duration: 250 } }
+
+        MouseArea {
+            anchors.fill: parent
+            enabled: addDeviceDialog.opened
+        }
+    }
+    AddDeviceDialog {
+        id: addDeviceDialog
+        anchors.centerIn: parent
+        dim: false
+
+        onDeviceAdded: {
+            rootItem.refreshList()
         }
     }
 }

@@ -10,3 +10,4 @@
 /qt/qml/SmartInventory/Components/NavButton.qml
 /qt/qml/SmartInventory/Pages/DeviceListScreen.qml
 /qt/qml/SmartInventory/Components/DeviceListItem.qml
+/qt/qml/SmartInventory/Components/AddDeviceDialog.qml
