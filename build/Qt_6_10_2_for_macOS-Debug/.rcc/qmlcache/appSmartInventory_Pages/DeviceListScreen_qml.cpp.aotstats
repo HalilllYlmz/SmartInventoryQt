@@ -7,18 +7,34 @@
                     "entries": [
                         {
                             "codegenResult": 2,
+                            "column": 30,
+                            "durationMicroseconds": 0,
+                            "functionName": "allDevices",
+                            "line": 10,
+                            "message": "Cannot generate efficient code for storing an array in a non-sequence type"
+                        },
+                        {
+                            "codegenResult": 2,
                             "column": 5,
                             "durationMicroseconds": 0,
                             "functionName": "refreshList",
-                            "line": 12,
+                            "line": 16,
                             "message": "Cannot generate efficient code for script lookup"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 5,
+                            "durationMicroseconds": 0,
+                            "functionName": "applyFilter",
+                            "line": 26,
+                            "message": "Cannot retrieve a non-object type by ID: searchField"
                         },
                         {
                             "codegenResult": 0,
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "onCompleted",
-                            "line": 10,
+                            "line": 14,
                             "message": ""
                         },
                         {
@@ -26,15 +42,119 @@
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 32,
+                            "line": 58,
                             "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 28,
+                            "durationMicroseconds": 0,
+                            "functionName": "onClicked",
+                            "line": 91,
+                            "message": "Could not find signal \"clicked\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 27,
+                            "durationMicroseconds": 0,
+                            "functionName": "text",
+                            "line": 79,
+                            "message": "Cannot load property text from (component in /Users/halilyilmaz/SmartInventory/Pages/DeviceListScreen.qml)::parent with type QQuickItem."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 27,
+                            "durationMicroseconds": 0,
+                            "functionName": "font",
+                            "line": 81,
+                            "message": "Cannot load property font from (component in /Users/halilyilmaz/SmartInventory/Pages/DeviceListScreen.qml)::parent with type QQuickItem."
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 42,
+                            "durationMicroseconds": 0,
+                            "functionName": "horizontalAlignment",
+                            "line": 82,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 40,
+                            "durationMicroseconds": 0,
+                            "functionName": "verticalAlignment",
+                            "line": 83,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 28,
+                            "durationMicroseconds": 0,
+                            "functionName": "color",
+                            "line": 87,
+                            "message": "Cannot load property down from (component in /Users/halilyilmaz/SmartInventory/Pages/DeviceListScreen.qml)::parent with type QQuickItem."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 36,
+                            "durationMicroseconds": 0,
+                            "functionName": "verticalAlignment",
+                            "line": 108,
+                            "message": "Could not find property \"verticalAlignment\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 32,
+                            "durationMicroseconds": 0,
+                            "functionName": "onTextChanged",
+                            "line": 120,
+                            "message": "Could not find signal \"textChanged\"."
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 35,
+                            "durationMicroseconds": 0,
+                            "functionName": "color",
+                            "line": 116,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 24,
+                            "durationMicroseconds": 0,
+                            "functionName": "model",
+                            "line": 127,
+                            "message": "Could not find property \"model\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 39,
+                            "durationMicroseconds": 0,
+                            "functionName": "onCurrentTextChanged",
+                            "line": 129,
+                            "message": "Could not find signal \"currentTextChanged\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 23,
+                            "durationMicroseconds": 0,
+                            "functionName": "text",
+                            "line": 142,
+                            "message": "Could not find property \"text\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 28,
+                            "durationMicroseconds": 0,
+                            "functionName": "onClicked",
+                            "line": 152,
+                            "message": "Could not find signal \"clicked\"."
                         },
                         {
                             "codegenResult": 0,
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "model",
-                            "line": 47,
+                            "line": 160,
                             "message": ""
                         },
                         {
@@ -42,7 +162,7 @@
                             "column": 26,
                             "durationMicroseconds": 0,
                             "functionName": "visible",
-                            "line": 53,
+                            "line": 166,
                             "message": ""
                         },
                         {
@@ -50,7 +170,7 @@
                             "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "centerIn",
-                            "line": 51,
+                            "line": 164,
                             "message": ""
                         },
                         {
@@ -58,7 +178,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 61,
+                            "line": 174,
                             "message": ""
                         },
                         {
@@ -66,7 +186,7 @@
                             "column": 29,
                             "durationMicroseconds": 0,
                             "functionName": "deviceName",
-                            "line": 63,
+                            "line": 176,
                             "message": "Cannot access value for name model"
                         },
                         {
@@ -74,7 +194,7 @@
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "serialNumber",
-                            "line": 64,
+                            "line": 177,
                             "message": "Cannot access value for name model"
                         },
                         {
@@ -82,7 +202,7 @@
                             "column": 25,
                             "durationMicroseconds": 0,
                             "functionName": "status",
-                            "line": 65,
+                            "line": 178,
                             "message": "Cannot access value for name model"
                         },
                         {
@@ -90,7 +210,7 @@
                             "column": 34,
                             "durationMicroseconds": 0,
                             "functionName": "maintenanceDate",
-                            "line": 66,
+                            "line": 179,
                             "message": "Cannot access value for name model"
                         },
                         {
@@ -98,7 +218,7 @@
                             "column": 32,
                             "durationMicroseconds": 0,
                             "functionName": "onEditClicked",
-                            "line": 68,
+                            "line": 181,
                             "message": "Cannot access value for name model"
                         },
                         {
@@ -106,7 +226,7 @@
                             "column": 34,
                             "durationMicroseconds": 0,
                             "functionName": "onDeleteClicked",
-                            "line": 69,
+                            "line": 183,
                             "message": "Cannot access value for name model"
                         }
                     ],

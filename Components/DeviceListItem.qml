@@ -69,7 +69,7 @@ Rectangle {
                     font.pixelSize: 14
                 }
 
-                Rectangle { width: 4; height: 4; radius: 2; color: "#bdc3c7" } // Nokta
+                Rectangle { width: 4; height: 4; radius: 2; color: "#bdc3c7" }
 
                 Text {
                     text: root.status
@@ -140,7 +140,6 @@ Rectangle {
                                 font: parent.font
                                 horizontalAlignment: Text.AlignLeft
                                 verticalAlignment: Text.AlignVCenter
-                                leftPadding: 10
                             }
                             onTriggered: root.deleteClicked()
                         }

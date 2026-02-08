@@ -69,7 +69,7 @@ Rectangle {
                     font.pixelSize: 14
                 }
 
-                Rectangle { width: 4; height: 4; radius: 2; color: "#bdc3c7" } // Nokta
+                Rectangle { width: 4; height: 4; radius: 2; color: "#bdc3c7" }
 
                 Text {
                     text: root.status
@@ -105,17 +105,15 @@ Rectangle {
                         radius: 5
                     }
 
-                    // ÇÖZÜM: Tıklama anında menüyü aç, ama Timer çalışıyorsa açma.
                     onClicked: {
                         if (!menuBlocker.running) {
                             optionsMenu.open()
                         }
                     }
 
-                    // Bu Timer, menü kapandıktan sonra butonu kısa süre kilitler
                     Timer {
                         id: menuBlocker
-                        interval: 100 // 100 milisaniye bekle
+                        interval: 100
                     }
 
                     Menu {
@@ -123,7 +121,6 @@ Rectangle {
                         y: parent.height
                         x: parent.width - width
 
-                        // Menü kapandığı an Timer'ı başlat (kilidi devreye sok)
                         onClosed: {
                             menuBlocker.start()
                         }
@@ -143,7 +140,6 @@ Rectangle {
                                 font: parent.font
                                 horizontalAlignment: Text.AlignLeft
                                 verticalAlignment: Text.AlignVCenter
-                                leftPadding: 10
                             }
                             onTriggered: root.deleteClicked()
                         }
