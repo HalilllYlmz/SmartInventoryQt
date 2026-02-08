@@ -1,6 +1,7 @@
 <RCC>
   <qresource prefix="/qt/qml/SmartInventory/">
     <file alias="Main.qml">/Users/halilyilmaz/SmartInventory/Main.qml</file>
+    <file alias="DeviceApi.js">/Users/halilyilmaz/SmartInventory/DeviceApi.js</file>
   </qresource>
 </RCC>
 

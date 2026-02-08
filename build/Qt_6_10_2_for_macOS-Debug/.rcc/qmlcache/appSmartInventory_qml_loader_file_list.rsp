@@ -3,3 +3,4 @@
 --resource
 /Users/halilyilmaz/SmartInventory/build/Qt_6_10_2_for_macOS-Debug/.qt/rcc/appSmartInventory_raw_qml_0.qrc
 /qt/qml/SmartInventory/Main.qml
+/qt/qml/SmartInventory/DeviceApi.js

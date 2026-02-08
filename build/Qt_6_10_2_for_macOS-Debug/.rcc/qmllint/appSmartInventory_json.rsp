@@ -12,5 +12,6 @@
 --resource
 /Users/halilyilmaz/SmartInventory/build/Qt_6_10_2_for_macOS-Debug/.qt/rcc/appSmartInventory_raw_qml_0.qrc
 /Users/halilyilmaz/SmartInventory/Main.qml
+/Users/halilyilmaz/SmartInventory/DeviceApi.js
 --json
 /Users/halilyilmaz/SmartInventory/build/Qt_6_10_2_for_macOS-Debug/appSmartInventory_qmllint.json
