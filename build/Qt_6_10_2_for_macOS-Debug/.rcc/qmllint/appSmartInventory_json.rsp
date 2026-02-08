@@ -1,0 +1,16 @@
+--bare
+-I
+/Users/halilyilmaz/SmartInventory/build/Qt_6_10_2_for_macOS-Debug
+-I
+/Users/halilyilmaz/SmartInventory/build/Qt_6_10_2_for_macOS-Debug/SmartInventory
+-I
+/Users/halilyilmaz/SmartInventory/build/Qt_6_10_2_for_macOS-Debug
+-I
+/Users/halilyilmaz/Qt/6.10.2/macos/qml
+--resource
+/Users/halilyilmaz/SmartInventory/build/Qt_6_10_2_for_macOS-Debug/.qt/rcc/qmake_SmartInventory.qrc
+--resource
+/Users/halilyilmaz/SmartInventory/build/Qt_6_10_2_for_macOS-Debug/.qt/rcc/appSmartInventory_raw_qml_0.qrc
+/Users/halilyilmaz/SmartInventory/Main.qml
+--json
+/Users/halilyilmaz/SmartInventory/build/Qt_6_10_2_for_macOS-Debug/appSmartInventory_qmllint.json

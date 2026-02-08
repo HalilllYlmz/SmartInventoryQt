@@ -1,0 +1,6 @@
+module SmartInventory
+typeinfo appSmartInventory.qmltypes
+prefer :/qt/qml/SmartInventory/
+Main 254.0 Main.qml
+depends QtQuick
+
