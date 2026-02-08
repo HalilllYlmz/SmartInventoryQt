@@ -5,8 +5,7 @@
 		"commands" : 
 		[
 			"add_custom_target",
-			"_qt_internal_deferred_aotstats_setup",
-			"add_dependencies"
+			"_qt_internal_deferred_aotstats_setup"
 		],
 		"files" : 
 		[
@@ -33,13 +32,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 1245,
-				"parent" : 2
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 1250,
+				"line" : 1306,
 				"parent" : 2
 			}
 		]
@@ -47,16 +40,11 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 4,
-			"id" : "appSmartInventory_qmltyperegistration::@6890427a1f51a3e7e1df"
+			"id" : "module_appSmartInventory_aotstats_target::@6890427a1f51a3e7e1df"
 		}
 	],
-	"folder" : 
-	{
-		"name" : "QtInternalTargets"
-	},
-	"id" : "module_appSmartInventory_aotstats_target::@6890427a1f51a3e7e1df",
-	"name" : "module_appSmartInventory_aotstats_target",
+	"id" : "all_aotstats::@6890427a1f51a3e7e1df",
+	"name" : "all_aotstats",
 	"paths" : 
 	{
 		"build" : ".",
@@ -80,7 +68,10 @@
 				3,
 				4,
 				5,
-				6
+				6,
+				7,
+				8,
+				9
 			]
 		}
 	],
@@ -89,19 +80,31 @@
 		{
 			"backtrace" : 3,
 			"isGenerated" : true,
-			"path" : "build/Qt_6_10_2_for_macOS-Debug/CMakeFiles/module_appSmartInventory_aotstats_target",
+			"path" : "build/Qt_6_10_2_for_macOS-Debug/CMakeFiles/all_aotstats",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Qt_6_10_2_for_macOS-Debug/CMakeFiles/module_appSmartInventory_aotstats_target.rule",
+			"path" : "build/Qt_6_10_2_for_macOS-Debug/CMakeFiles/all_aotstats.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Qt_6_10_2_for_macOS-Debug/.rcc/qmlcache/all_aotstats.aotstats.rule",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Qt_6_10_2_for_macOS-Debug/.rcc/qmlcache/module_appSmartInventory.aotstats.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Qt_6_10_2_for_macOS-Debug/.rcc/qmlcache/appSmartInventory_Components/DeviceListItem_qml.cpp.rule",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -120,6 +123,12 @@
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Qt_6_10_2_for_macOS-Debug/.rcc/qmlcache/appSmartInventory_Pages/DashboardScreen_qml.cpp.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Qt_6_10_2_for_macOS-Debug/.rcc/qmlcache/appSmartInventory_Pages/DeviceListScreen_qml.cpp.rule",
 			"sourceGroupIndex" : 1
 		},
 		{

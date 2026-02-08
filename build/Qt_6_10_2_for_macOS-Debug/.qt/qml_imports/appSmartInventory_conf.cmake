@@ -1,4 +1,4 @@
-set(qml_import_scanner_imports_count 33)
+set(qml_import_scanner_imports_count 35)
 set(qml_import_scanner_import_0 "CLASSNAME;QtQuick2Plugin;LINKTARGET;Qt6::qtquick2plugin;NAME;QtQuick;PATH;/Users/halilyilmaz/Qt/6.10.2/macos/qml/QtQuick;PLUGIN;qtquick2plugin;PLUGINISOPTIONAL;;PREFER;:/qt-project.org/imports/QtQuick/;RELATIVEPATH;QtQuick;TYPE;module;")
 set(qml_import_scanner_import_1 "CLASSNAME;QtQmlPlugin;LINKTARGET;Qt6::qmlplugin;NAME;QtQml;PATH;/Users/halilyilmaz/Qt/6.10.2/macos/qml/QtQml;PLUGIN;qmlplugin;PLUGINISOPTIONAL;;PREFER;:/qt-project.org/imports/QtQml/;RELATIVEPATH;QtQml;TYPE;module;")
 set(qml_import_scanner_import_2 "NAME;QML;PATH;/Users/halilyilmaz/Qt/6.10.2/macos/qml/QML;PREFER;:/qt-project.org/imports/QML/;RELATIVEPATH;QML;TYPE;module;")
@@ -30,6 +30,8 @@ set(qml_import_scanner_import_27 "CLASSNAME;QtQuickControls2NativeStylePlugin;CO
 set(qml_import_scanner_import_28 "CLASSNAME;QtQuick_Controls_iOS_implPlugin;COMPONENTS;/Users/halilyilmaz/Qt/6.10.2/macos/qml/QtQuick/Controls/iOS/impl/CursorDelegate.qml;/Users/halilyilmaz/Qt/6.10.2/macos/qml/QtQuick/Controls/iOS/impl/DialogButtonBoxDelegate.qml;LINKTARGET;Qt6::qtquickcontrols2iosstyleimplplugin;NAME;QtQuick.Controls.iOS.impl;PATH;/Users/halilyilmaz/Qt/6.10.2/macos/qml/QtQuick/Controls/iOS/impl;PLUGIN;qtquickcontrols2iosstyleimplplugin;PLUGINISOPTIONAL;;PREFER;:/qt-project.org/imports/QtQuick/Controls/iOS/impl/;RELATIVEPATH;QtQuick/Controls/iOS/impl;TYPE;module;")
 set(qml_import_scanner_import_29 "CLASSNAME;QtQuickControls2BasicStyleImplPlugin;LINKTARGET;Qt6::qtquickcontrols2basicstyleimplplugin;NAME;QtQuick.Controls.Basic.impl;PATH;/Users/halilyilmaz/Qt/6.10.2/macos/qml/QtQuick/Controls/Basic/impl;PLUGIN;qtquickcontrols2basicstyleimplplugin;PLUGINISOPTIONAL;;PREFER;:/qt-project.org/imports/QtQuick/Controls/Basic/impl/;RELATIVEPATH;QtQuick/Controls/Basic/impl;TYPE;module;")
 set(qml_import_scanner_import_30 "CLASSNAME;QtQmlLabsModelsPlugin;LINKTARGET;Qt6::labsmodelsplugin;NAME;Qt.labs.qmlmodels;PATH;/Users/halilyilmaz/Qt/6.10.2/macos/qml/Qt/labs/qmlmodels;PLUGIN;labsmodelsplugin;PLUGINISOPTIONAL;;PREFER;:/qt-project.org/imports/Qt/labs/qmlmodels/;RELATIVEPATH;Qt/labs/qmlmodels;TYPE;module;")
-set(qml_import_scanner_import_31 "NAME;./Scripts/DeviceApi.js;PATH;/Users/halilyilmaz/SmartInventory/Scripts/DeviceApi.js;TYPE;javascript;")
-set(qml_import_scanner_import_32 "NAME;./Scripts/DeviceApi.js;PATH;/Users/halilyilmaz/SmartInventory/build/Qt_6_10_2_for_macOS-Debug/SmartInventory/Scripts/DeviceApi.js;TYPE;javascript;")
+set(qml_import_scanner_import_31 "NAME;Components;PATH;/Users/halilyilmaz/SmartInventory/Components;TYPE;directory;")
+set(qml_import_scanner_import_32 "NAME;Pages;PATH;/Users/halilyilmaz/SmartInventory/Pages;TYPE;directory;")
+set(qml_import_scanner_import_33 "NAME;Components;PATH;/Users/halilyilmaz/SmartInventory/build/Qt_6_10_2_for_macOS-Debug/SmartInventory/Components;TYPE;directory;")
+set(qml_import_scanner_import_34 "NAME;Pages;PATH;/Users/halilyilmaz/SmartInventory/build/Qt_6_10_2_for_macOS-Debug/SmartInventory/Pages;TYPE;directory;")
 

@@ -6,5 +6,6 @@ DashboardScreen 254.0 Pages/DashboardScreen.qml
 DeviceApi 254.0 Scripts/DeviceApi.js
 NavButton 254.0 Components/NavButton.qml
 DeviceListScreen 254.0 Pages/DeviceListScreen.qml
+DeviceListItem 254.0 Components/DeviceListItem.qml
 depends QtQuick
 

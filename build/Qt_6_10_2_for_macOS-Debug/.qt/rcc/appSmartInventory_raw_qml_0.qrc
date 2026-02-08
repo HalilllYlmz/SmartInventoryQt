@@ -5,6 +5,7 @@
     <file alias="Scripts/DeviceApi.js">/Users/halilyilmaz/SmartInventory/Scripts/DeviceApi.js</file>
     <file alias="Components/NavButton.qml">/Users/halilyilmaz/SmartInventory/Components/NavButton.qml</file>
     <file alias="Pages/DeviceListScreen.qml">/Users/halilyilmaz/SmartInventory/Pages/DeviceListScreen.qml</file>
+    <file alias="Components/DeviceListItem.qml">/Users/halilyilmaz/SmartInventory/Components/DeviceListItem.qml</file>
   </qresource>
 </RCC>
 

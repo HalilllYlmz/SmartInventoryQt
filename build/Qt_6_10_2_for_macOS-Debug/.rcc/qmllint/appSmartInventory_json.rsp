@@ -18,5 +18,6 @@
 /Users/halilyilmaz/SmartInventory/Scripts/DeviceApi.js
 /Users/halilyilmaz/SmartInventory/Components/NavButton.qml
 /Users/halilyilmaz/SmartInventory/Pages/DeviceListScreen.qml
+/Users/halilyilmaz/SmartInventory/Components/DeviceListItem.qml
 --json
 /Users/halilyilmaz/SmartInventory/build/Qt_6_10_2_for_macOS-Debug/appSmartInventory_qmllint.json
