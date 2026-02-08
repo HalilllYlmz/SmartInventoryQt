@@ -140,7 +140,6 @@ Item {
             }
         }
 
-        // Liste
         ListView {
             Layout.fillWidth: true
             Layout.fillHeight: true
@@ -165,7 +164,17 @@ Item {
                 status: model.status || model.Status
                 maintenanceDate: model.lastMaintenanceDate
 
-                onEditClicked: console.log("Güncelle:", model.id || model.Id)
+                onEditClicked: {
+                    var itemData = {
+                        "id": model.id || model.Id,
+                        "deviceName": model.deviceName || model.DeviceName,
+                        "serialNumber": model.serialNumber || model.SerialNumber,
+                        "status": model.status || model.Status,
+                        "maintenanceDate": model.lastMaintenanceDate
+                    }
+
+                    addDeviceDialog.openForEdit(itemData)
+                }
                 onDeleteClicked: {
                     var deleteId = model.id || model.Id
                     Api.deleteDevice(deleteId, function() { refreshList() })
@@ -192,6 +201,9 @@ Item {
         dim: false
 
         onDeviceAdded: {
+            rootItem.refreshList()
+        }
+        onDeviceUpdated: {
             rootItem.refreshList()
         }
     }

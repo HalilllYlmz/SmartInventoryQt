@@ -41,16 +41,24 @@
                             "codegenResult": 2,
                             "column": 5,
                             "durationMicroseconds": 0,
-                            "functionName": "resetForm",
+                            "functionName": "openForAdd",
                             "line": 34,
-                            "message": "Cannot access value for name nameField"
+                            "message": "Cannot access value for name titleText"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 5,
+                            "durationMicroseconds": 0,
+                            "functionName": "openForEdit",
+                            "line": 49,
+                            "message": "Functions without type annotations won't be compiled"
                         },
                         {
                             "codegenResult": 2,
                             "column": 5,
                             "durationMicroseconds": 0,
                             "functionName": "updateDateText",
-                            "line": 42,
+                            "line": 71,
                             "message": "Cannot access value for name dateDisplay"
                         },
                         {
@@ -58,60 +66,28 @@
                             "column": 5,
                             "durationMicroseconds": 0,
                             "functionName": "getISODate",
-                            "line": 46,
+                            "line": 75,
                             "message": "function without return type annotation returns QString. This may prevent proper compilation to Cpp."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 15,
-                            "durationMicroseconds": 0,
-                            "functionName": "onOpened",
-                            "line": 51,
-                            "message": "Could not find signal \"opened\"."
                         },
                         {
                             "codegenResult": 0,
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "alignment",
-                            "line": 61,
+                            "line": 87,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
-                            "column": 36,
+                            "column": 93,
                             "durationMicroseconds": 0,
                             "functionName": "verticalAlignment",
-                            "line": 78,
+                            "line": 97,
                             "message": "Could not find property \"verticalAlignment\"."
                         },
                         {
                             "codegenResult": 0,
-                            "column": 28,
-                            "durationMicroseconds": 0,
-                            "functionName": "color",
-                            "line": 81,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 35,
-                            "durationMicroseconds": 0,
-                            "functionName": "color",
-                            "line": 83,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 36,
-                            "durationMicroseconds": 0,
-                            "functionName": "verticalAlignment",
-                            "line": 95,
-                            "message": "Could not find property \"verticalAlignment\"."
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 28,
+                            "column": 48,
                             "durationMicroseconds": 0,
                             "functionName": "color",
                             "line": 98,
@@ -119,10 +95,34 @@
                         },
                         {
                             "codegenResult": 0,
-                            "column": 35,
+                            "column": 116,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 100,
+                            "line": 98,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 88,
+                            "durationMicroseconds": 0,
+                            "functionName": "verticalAlignment",
+                            "line": 104,
+                            "message": "Could not find property \"verticalAlignment\"."
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 48,
+                            "durationMicroseconds": 0,
+                            "functionName": "color",
+                            "line": 105,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 116,
+                            "durationMicroseconds": 0,
+                            "functionName": "color",
+                            "line": 105,
                             "message": ""
                         },
                         {
@@ -130,47 +130,47 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "model",
-                            "line": 110,
+                            "line": 111,
                             "message": "Could not find property \"model\"."
                         },
                         {
                             "codegenResult": 2,
-                            "column": 27,
+                            "column": 60,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 114,
+                            "line": 113,
                             "message": "Cannot access value for name statusCombo"
                         },
                         {
                             "codegenResult": 2,
-                            "column": 27,
+                            "column": 91,
                             "durationMicroseconds": 0,
                             "functionName": "font",
-                            "line": 115,
+                            "line": 113,
                             "message": "Cannot access value for name statusCombo"
                         },
                         {
                             "codegenResult": 0,
-                            "column": 40,
+                            "column": 146,
                             "durationMicroseconds": 0,
                             "functionName": "verticalAlignment",
-                            "line": 117,
+                            "line": 113,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
-                            "column": 28,
+                            "column": 172,
                             "durationMicroseconds": 0,
                             "functionName": "elide",
-                            "line": 118,
+                            "line": 113,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
-                            "column": 31,
+                            "column": 61,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 135,
+                            "line": 120,
                             "message": "Cannot access value for name calendarPopup"
                         },
                         {
@@ -178,7 +178,7 @@
                             "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 139,
+                            "line": 122,
                             "message": ""
                         },
                         {
@@ -186,7 +186,7 @@
                             "column": 32,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 154,
+                            "line": 128,
                             "message": "Cannot access value for name dateInputArea"
                         },
                         {
@@ -194,7 +194,7 @@
                             "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 153,
+                            "line": 127,
                             "message": ""
                         },
                         {
@@ -202,7 +202,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "x",
-                            "line": 175,
+                            "line": 139,
                             "message": "Could not find property \"x\"."
                         },
                         {
@@ -210,39 +210,39 @@
                             "column": 21,
                             "durationMicroseconds": 0,
                             "functionName": "changeMonth",
-                            "line": 247,
+                            "line": 165,
                             "message": "Functions without type annotations won't be compiled"
                         },
                         {
                             "codegenResult": 2,
-                            "column": 72,
+                            "column": 73,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 194,
+                            "line": 147,
                             "message": "Could not find signal \"clicked\"."
                         },
                         {
                             "codegenResult": 2,
-                            "column": 39,
+                            "column": 43,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 196,
+                            "line": 148,
                             "message": "Cannot access value for name calendarGrid"
                         },
                         {
                             "codegenResult": 0,
-                            "column": 54,
+                            "column": 145,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalAlignment",
-                            "line": 199,
+                            "line": 148,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
-                            "column": 72,
+                            "column": 73,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 201,
+                            "line": 149,
                             "message": "Could not find signal \"clicked\"."
                         },
                         {
@@ -250,23 +250,23 @@
                             "column": 36,
                             "durationMicroseconds": 0,
                             "functionName": "month",
-                            "line": 207,
+                            "line": 153,
                             "message": "Could not find property \"month\"."
                         },
                         {
                             "codegenResult": 2,
-                            "column": 35,
+                            "column": 65,
                             "durationMicroseconds": 0,
                             "functionName": "year",
-                            "line": 208,
+                            "line": 153,
                             "message": "Could not find property \"year\"."
                         },
                         {
                             "codegenResult": 2,
-                            "column": 37,
+                            "column": 99,
                             "durationMicroseconds": 0,
                             "functionName": "locale",
-                            "line": 209,
+                            "line": 153,
                             "message": "Could not find property \"locale\"."
                         },
                         {
@@ -274,15 +274,15 @@
                             "column": 40,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 212,
+                            "line": 155,
                             "message": "Cannot access value for name calendarGrid"
                         },
                         {
                             "codegenResult": 2,
-                            "column": 41,
+                            "column": 72,
                             "durationMicroseconds": 0,
                             "functionName": "height",
-                            "line": 213,
+                            "line": 155,
                             "message": "Cannot access value for name calendarGrid"
                         },
                         {
@@ -290,7 +290,7 @@
                             "column": 56,
                             "durationMicroseconds": 0,
                             "functionName": "isToday",
-                            "line": 216,
+                            "line": 156,
                             "message": "Cannot access value for name model"
                         },
                         {
@@ -298,7 +298,7 @@
                             "column": 59,
                             "durationMicroseconds": 0,
                             "functionName": "isSelected",
-                            "line": 217,
+                            "line": 157,
                             "message": "Cannot access value for name model"
                         },
                         {
@@ -306,71 +306,71 @@
                             "column": 63,
                             "durationMicroseconds": 0,
                             "functionName": "isCurrentMonth",
-                            "line": 218,
+                            "line": 158,
                             "message": "Cannot access value for name model"
                         },
                         {
                             "codegenResult": 2,
-                            "column": 44,
+                            "column": 113,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 223,
+                            "line": 159,
                             "message": "Cannot access value for name isSelected"
                         },
                         {
                             "codegenResult": 0,
-                            "column": 55,
+                            "column": 63,
                             "durationMicroseconds": 0,
                             "functionName": "centerIn",
-                            "line": 221,
+                            "line": 159,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
-                            "column": 43,
+                            "column": 72,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 228,
+                            "line": 160,
                             "message": "Cannot access value for name model"
                         },
                         {
                             "codegenResult": 2,
-                            "column": 44,
+                            "column": 90,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 229,
+                            "line": 160,
                             "message": "Cannot access value for name isSelected"
                         },
                         {
                             "codegenResult": 0,
-                            "column": 55,
+                            "column": 58,
                             "durationMicroseconds": 0,
                             "functionName": "centerIn",
-                            "line": 227,
+                            "line": 160,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
-                            "column": 48,
+                            "column": 166,
                             "durationMicroseconds": 0,
                             "functionName": "bold",
-                            "line": 230,
+                            "line": 160,
                             "message": "Cannot access value for name isSelected"
                         },
                         {
                             "codegenResult": 2,
-                            "column": 48,
+                            "column": 78,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 235,
+                            "line": 161,
                             "message": "Cannot access value for name model"
                         },
                         {
                             "codegenResult": 0,
-                            "column": 51,
+                            "column": 59,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 234,
+                            "line": 161,
                             "message": ""
                         },
                         {
@@ -378,15 +378,15 @@
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "alignment",
-                            "line": 258,
+                            "line": 176,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
-                            "column": 28,
+                            "column": 126,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 268,
+                            "line": 177,
                             "message": "Could not find signal \"clicked\"."
                         },
                         {
@@ -394,7 +394,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 284,
+                            "line": 188,
                             "message": "Could not find signal \"clicked\"."
                         },
                         {
@@ -402,7 +402,7 @@
                             "column": 27,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 275,
+                            "line": 184,
                             "message": "Cannot load property text from (component in /Users/halilyilmaz/SmartInventory/Components/AddDeviceDialog.qml)::parent with type QQuickItem."
                         },
                         {
@@ -410,31 +410,31 @@
                             "column": 62,
                             "durationMicroseconds": 0,
                             "functionName": "font",
-                            "line": 275,
+                            "line": 184,
                             "message": "Cannot load property font from (component in /Users/halilyilmaz/SmartInventory/Components/AddDeviceDialog.qml)::parent with type QQuickItem."
                         },
                         {
                             "codegenResult": 0,
-                            "column": 42,
+                            "column": 96,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalAlignment",
-                            "line": 276,
+                            "line": 184,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
-                            "column": 80,
+                            "column": 134,
                             "durationMicroseconds": 0,
                             "functionName": "verticalAlignment",
-                            "line": 276,
+                            "line": 184,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
-                            "column": 28,
+                            "column": 48,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 279,
+                            "line": 186,
                             "message": "Cannot load property down from (component in /Users/halilyilmaz/SmartInventory/Components/AddDeviceDialog.qml)::parent with type QQuickItem."
                         }
                     ],
