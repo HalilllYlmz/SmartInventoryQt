@@ -1,4 +1,4 @@
-set(qml_import_scanner_imports_count 39)
+set(qml_import_scanner_imports_count 40)
 set(qml_import_scanner_import_0 "CLASSNAME;QtQuick2Plugin;LINKTARGET;Qt6::qtquick2plugin;NAME;QtQuick;PATH;/Users/halilyilmaz/Qt/6.10.2/macos/qml/QtQuick;PLUGIN;qtquick2plugin;PLUGINISOPTIONAL;;PREFER;:/qt-project.org/imports/QtQuick/;RELATIVEPATH;QtQuick;TYPE;module;")
 set(qml_import_scanner_import_1 "CLASSNAME;QtQmlPlugin;LINKTARGET;Qt6::qmlplugin;NAME;QtQml;PATH;/Users/halilyilmaz/Qt/6.10.2/macos/qml/QtQml;PLUGIN;qmlplugin;PLUGINISOPTIONAL;;PREFER;:/qt-project.org/imports/QtQml/;RELATIVEPATH;QtQml;TYPE;module;")
 set(qml_import_scanner_import_2 "NAME;QML;PATH;/Users/halilyilmaz/Qt/6.10.2/macos/qml/QML;PREFER;:/qt-project.org/imports/QML/;RELATIVEPATH;QML;TYPE;module;")
@@ -36,6 +36,7 @@ set(qml_import_scanner_import_33 "NAME;../Scripts/DeviceApi.js;PATH;/Users/halil
 set(qml_import_scanner_import_34 "NAME;Components;PATH;/Users/halilyilmaz/SmartInventory/build/Qt_6_10_2_for_macOS-Debug/SmartInventory/Components;TYPE;directory;")
 set(qml_import_scanner_import_35 "NAME;Pages;PATH;/Users/halilyilmaz/SmartInventory/build/Qt_6_10_2_for_macOS-Debug/SmartInventory/Pages;TYPE;directory;")
 set(qml_import_scanner_import_36 "NAME;../Scripts/DeviceApi.js;PATH;/Users/halilyilmaz/SmartInventory/build/Qt_6_10_2_for_macOS-Debug/SmartInventory/Scripts/DeviceApi.js;TYPE;javascript;")
-set(qml_import_scanner_import_37 "NAME;../Components;PATH;/Users/halilyilmaz/SmartInventory/build/Qt_6_10_2_for_macOS-Debug/SmartInventory/Components;TYPE;directory;")
-set(qml_import_scanner_import_38 "NAME;../Components;PATH;/Users/halilyilmaz/SmartInventory/Components;TYPE;directory;")
+set(qml_import_scanner_import_37 "CLASSNAME;QtWebSocketsDeclarativeModule;LINKTARGET;Qt6::qmlwebsockets;NAME;QtWebSockets;PATH;/Users/halilyilmaz/Qt/6.10.2/macos/qml/QtWebSockets;PLUGIN;qmlwebsocketsplugin;PLUGINISOPTIONAL;;PREFER;:/qt-project.org/imports/QtWebSockets/;RELATIVEPATH;QtWebSockets;TYPE;module;")
+set(qml_import_scanner_import_38 "NAME;../Components;PATH;/Users/halilyilmaz/SmartInventory/build/Qt_6_10_2_for_macOS-Debug/SmartInventory/Components;TYPE;directory;")
+set(qml_import_scanner_import_39 "NAME;../Components;PATH;/Users/halilyilmaz/SmartInventory/Components;TYPE;directory;")
 
