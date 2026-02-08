@@ -1,0 +1,36 @@
+# --- Build (Derleme) Klasörleri ---
+build/
+build-*/
+cmake-build-*/
+debug/
+release/
+bin/
+*.app/
+
+# --- Qt Creator / IDE Ayarları ---
+.qtcreator/
+CMakeLists.txt.user*
+*.pro.user
+*.pro.user.*
+*.qmake.stash
+
+# --- CMake Dosyaları (Source içi derleme yapılırsa) ---
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+
+# --- QML Önbellek Dosyaları ---
+*.qmlc
+*.jsc
+
+# --- macOS Gereksiz Dosyaları ---
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# --- Nesne Dosyaları ---
+*.o
+*.obj
+*.moc

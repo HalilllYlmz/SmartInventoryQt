@@ -1,2 +1,0 @@
-set(__QT_DEPLOY_TARGET_appSmartInventory_FILE /Users/halilyilmaz/SmartInventory/build/Qt_6_10_2_for_macOS-Debug/appSmartInventory.app/Contents/MacOS/appSmartInventory)
-set(__QT_DEPLOY_TARGET_appSmartInventory_TYPE EXECUTABLE)
