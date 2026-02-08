@@ -94,13 +94,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 37,
+				"line" : 43,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 32,
+				"line" : 38,
 				"parent" : 0
 			},
 			{
@@ -457,6 +457,42 @@
 				"parent" : 64
 			},
 			{
+				"command" : 23,
+				"file" : 10,
+				"line" : 3554,
+				"parent" : 64
+			},
+			{
+				"command" : 23,
+				"file" : 10,
+				"line" : 3747,
+				"parent" : 64
+			},
+			{
+				"command" : 23,
+				"file" : 10,
+				"line" : 3554,
+				"parent" : 64
+			},
+			{
+				"command" : 23,
+				"file" : 10,
+				"line" : 3747,
+				"parent" : 64
+			},
+			{
+				"command" : 23,
+				"file" : 10,
+				"line" : 3554,
+				"parent" : 64
+			},
+			{
+				"command" : 23,
+				"file" : 10,
+				"line" : 3747,
+				"parent" : 64
+			},
+			{
 				"command" : 27,
 				"file" : 10,
 				"line" : 3839,
@@ -466,19 +502,43 @@
 				"command" : 26,
 				"file" : 0,
 				"line" : 405,
-				"parent" : 69
+				"parent" : 75
 			},
 			{
 				"command" : 25,
 				"file" : 0,
 				"line" : 2625,
-				"parent" : 70
+				"parent" : 76
 			},
 			{
 				"command" : 23,
 				"file" : 0,
 				"line" : 2165,
-				"parent" : 71
+				"parent" : 77
+			},
+			{
+				"command" : 27,
+				"file" : 10,
+				"line" : 3893,
+				"parent" : 64
+			},
+			{
+				"command" : 26,
+				"file" : 0,
+				"line" : 405,
+				"parent" : 79
+			},
+			{
+				"command" : 25,
+				"file" : 0,
+				"line" : 2625,
+				"parent" : 80
+			},
+			{
+				"command" : 23,
+				"file" : 0,
+				"line" : 2165,
+				"parent" : 81
 			},
 			{
 				"command" : 30,
@@ -490,7 +550,7 @@
 				"command" : 23,
 				"file" : 0,
 				"line" : 2290,
-				"parent" : 73
+				"parent" : 83
 			}
 		]
 	},
@@ -640,7 +700,11 @@
 				4,
 				6,
 				7,
-				8
+				9,
+				11,
+				13,
+				14,
+				15
 			]
 		}
 	],
@@ -792,16 +856,21 @@
 				4,
 				6,
 				7,
-				8,
 				9,
 				11,
-				12,
-				21,
-				22,
+				13,
+				14,
+				15,
+				16,
+				18,
+				19,
 				23,
-				24,
-				25,
-				26
+				36,
+				37,
+				38,
+				39,
+				40,
+				41
 			]
 		},
 		{
@@ -809,28 +878,38 @@
 			"sourceIndexes" : 
 			[
 				1,
-				5
+				5,
+				8,
+				10,
+				12
 			]
 		},
 		{
 			"name" : "Resources",
 			"sourceIndexes" : 
 			[
-				10
+				17,
+				20,
+				21,
+				22
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				13,
-				14,
-				15,
-				16,
-				17,
-				18,
-				19,
-				20
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35
 			]
 		}
 	],
@@ -889,29 +968,96 @@
 			"sourceGroupIndex" : 0
 		},
 		{
+			"backtrace" : 69,
+			"path" : "Pages/DashboardScreen.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 70,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Qt_6_10_2_for_macOS-Debug/.rcc/qmlcache/appSmartInventory_Pages/DashboardScreen_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 71,
+			"path" : "Scripts/DeviceApi.js",
+			"sourceGroupIndex" : 1
+		},
+		{
 			"backtrace" : 72,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Qt_6_10_2_for_macOS-Debug/.rcc/qmlcache/appSmartInventory_Scripts/DeviceApi_js.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 73,
+			"path" : "Components/NavButton.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 74,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Qt_6_10_2_for_macOS-Debug/.rcc/qmlcache/appSmartInventory_Components/NavButton_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 78,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
 			"path" : "build/Qt_6_10_2_for_macOS-Debug/.qt/rcc/qrc_appSmartInventory_raw_qml_0.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 74,
+			"backtrace" : 82,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Qt_6_10_2_for_macOS-Debug/.qt/rcc/qrc_appSmartInventory_raw_qml_0_extra_qmldirs.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 84,
 			"isGenerated" : true,
 			"path" : "build/Qt_6_10_2_for_macOS-Debug/.qt/rcc/qmake_SmartInventory.qrc",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 74,
+			"backtrace" : 84,
 			"isGenerated" : true,
 			"path" : "build/Qt_6_10_2_for_macOS-Debug/SmartInventory/qmldir",
 			"sourceGroupIndex" : 2
 		},
 		{
-			"backtrace" : 74,
+			"backtrace" : 84,
 			"isGenerated" : true,
 			"path" : "build/Qt_6_10_2_for_macOS-Debug/.qt/rcc/appSmartInventory_raw_qml_0.qrc",
 			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 84,
+			"isGenerated" : true,
+			"path" : "build/Qt_6_10_2_for_macOS-Debug/.qt/rcc/appSmartInventory_raw_qml_0_extra_qmldirs.qrc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 84,
+			"isGenerated" : true,
+			"path" : "build/Qt_6_10_2_for_macOS-Debug/SmartInventory/Pages/qmldir",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 84,
+			"isGenerated" : true,
+			"path" : "build/Qt_6_10_2_for_macOS-Debug/SmartInventory/Scripts/qmldir",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 84,
+			"isGenerated" : true,
+			"path" : "build/Qt_6_10_2_for_macOS-Debug/SmartInventory/Components/qmldir",
+			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 0,
@@ -952,7 +1098,31 @@
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
+			"path" : "build/Qt_6_10_2_for_macOS-Debug/.rcc/qmlcache/appSmartInventory_Pages/DashboardScreen_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Qt_6_10_2_for_macOS-Debug/.rcc/qmlcache/appSmartInventory_Scripts/DeviceApi_js.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Qt_6_10_2_for_macOS-Debug/.rcc/qmlcache/appSmartInventory_Components/NavButton_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
 			"path" : "build/Qt_6_10_2_for_macOS-Debug/.qt/rcc/qrc_appSmartInventory_raw_qml_0.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Qt_6_10_2_for_macOS-Debug/.qt/rcc/qrc_appSmartInventory_raw_qml_0_extra_qmldirs.cpp.rule",
 			"sourceGroupIndex" : 3
 		},
 		{

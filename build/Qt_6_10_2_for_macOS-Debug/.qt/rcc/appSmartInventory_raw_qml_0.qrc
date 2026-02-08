@@ -1,7 +1,10 @@
 <RCC>
   <qresource prefix="/qt/qml/SmartInventory/">
     <file alias="Main.qml">/Users/halilyilmaz/SmartInventory/Main.qml</file>
-    <file alias="DeviceApi.js">/Users/halilyilmaz/SmartInventory/DeviceApi.js</file>
+    <file alias="Pages/DashboardScreen.qml">/Users/halilyilmaz/SmartInventory/Pages/DashboardScreen.qml</file>
+    <file alias="Scripts/DeviceApi.js">/Users/halilyilmaz/SmartInventory/Scripts/DeviceApi.js</file>
+    <file alias="Components/NavButton.qml">/Users/halilyilmaz/SmartInventory/Components/NavButton.qml</file>
+    <file alias="Pages/DeviceListScreen.qml">/Users/halilyilmaz/SmartInventory/Pages/DeviceListScreen.qml</file>
   </qresource>
 </RCC>
 

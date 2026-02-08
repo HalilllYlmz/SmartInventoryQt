@@ -3731,6 +3731,22 @@
 			"path" : "/Users/halilyilmaz/Qt/6.10.2/macos/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in"
 		},
 		{
+			"isExternal" : true,
+			"path" : "/Users/halilyilmaz/Qt/6.10.2/macos/lib/cmake/Qt6Qml/Qt6qmldirTemplate.cmake.in"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/halilyilmaz/Qt/6.10.2/macos/lib/cmake/Qt6Qml/Qt6qmldirTemplate.cmake.in"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/halilyilmaz/Qt/6.10.2/macos/lib/cmake/Qt6Qml/Qt6qmldirTemplate.cmake.in"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/halilyilmaz/Qt/6.10.2/macos/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in"
+		},
+		{
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "/Users/halilyilmaz/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/GNUInstallDirs.cmake"

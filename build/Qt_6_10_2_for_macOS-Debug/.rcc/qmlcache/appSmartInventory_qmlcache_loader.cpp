@@ -12,7 +12,28 @@ namespace _qt_qml_SmartInventory_Main_qml {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
-namespace _qt_qml_SmartInventory_DeviceApi_js { 
+namespace _qt_qml_SmartInventory_Pages_DashboardScreen_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _qt_qml_SmartInventory_Scripts_DeviceApi_js { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _qt_qml_SmartInventory_Components_NavButton_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _qt_qml_SmartInventory_Pages_DeviceListScreen_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
     const QQmlPrivate::CachedQmlUnit unit = {
@@ -34,7 +55,10 @@ Q_GLOBAL_STATIC(Registry, unitRegistry)
 
 Registry::Registry() {
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/SmartInventory/Main.qml"), &QmlCacheGeneratedCode::_qt_qml_SmartInventory_Main_qml::unit);
-    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/SmartInventory/DeviceApi.js"), &QmlCacheGeneratedCode::_qt_qml_SmartInventory_DeviceApi_js::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/SmartInventory/Pages/DashboardScreen.qml"), &QmlCacheGeneratedCode::_qt_qml_SmartInventory_Pages_DashboardScreen_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/SmartInventory/Scripts/DeviceApi.js"), &QmlCacheGeneratedCode::_qt_qml_SmartInventory_Scripts_DeviceApi_js::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/SmartInventory/Components/NavButton.qml"), &QmlCacheGeneratedCode::_qt_qml_SmartInventory_Components_NavButton_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/SmartInventory/Pages/DeviceListScreen.qml"), &QmlCacheGeneratedCode::_qt_qml_SmartInventory_Pages_DeviceListScreen_qml::unit);
     QQmlPrivate::RegisterQmlUnitCacheHook registration;
     registration.structVersion = 0;
     registration.lookupCachedQmlUnit = &lookupCachedUnit;

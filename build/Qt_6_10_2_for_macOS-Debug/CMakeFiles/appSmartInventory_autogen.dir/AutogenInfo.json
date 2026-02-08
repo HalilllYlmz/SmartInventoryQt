@@ -898,6 +898,10 @@
 		"/Users/halilyilmaz/Qt/6.10.2/macos/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
 		"/Users/halilyilmaz/Qt/6.10.2/macos/lib/cmake/Qt6Qml/Qt6QmlModuleDirMappingTemplate.qrc.in",
 		"/Users/halilyilmaz/Qt/6.10.2/macos/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
+		"/Users/halilyilmaz/Qt/6.10.2/macos/lib/cmake/Qt6Qml/Qt6qmldirTemplate.cmake.in",
+		"/Users/halilyilmaz/Qt/6.10.2/macos/lib/cmake/Qt6Qml/Qt6qmldirTemplate.cmake.in",
+		"/Users/halilyilmaz/Qt/6.10.2/macos/lib/cmake/Qt6Qml/Qt6qmldirTemplate.cmake.in",
+		"/Users/halilyilmaz/Qt/6.10.2/macos/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
 		"/Users/halilyilmaz/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/GNUInstallDirs.cmake",
 		"/Users/halilyilmaz/Qt/6.10.2/macos/lib/cmake/Qt6Qml/Qt6qmldirTemplate.cmake.in",
 		"/Users/halilyilmaz/SmartInventory/build/Qt_6_10_2_for_macOS-Debug/.qt/qml_imports/appSmartInventory_conf.cmake",
@@ -975,9 +979,13 @@
 	"MOC_SKIP" : 
 	[
 		"/Users/halilyilmaz/SmartInventory/build/Qt_6_10_2_for_macOS-Debug/.qt/rcc/qrc_appSmartInventory_raw_qml_0.cpp",
+		"/Users/halilyilmaz/SmartInventory/build/Qt_6_10_2_for_macOS-Debug/.qt/rcc/qrc_appSmartInventory_raw_qml_0_extra_qmldirs.cpp",
 		"/Users/halilyilmaz/SmartInventory/build/Qt_6_10_2_for_macOS-Debug/.qt/rcc/qrc_qmake_SmartInventory.cpp",
-		"/Users/halilyilmaz/SmartInventory/build/Qt_6_10_2_for_macOS-Debug/.rcc/qmlcache/appSmartInventory_DeviceApi_js.cpp",
+		"/Users/halilyilmaz/SmartInventory/build/Qt_6_10_2_for_macOS-Debug/.rcc/qmlcache/appSmartInventory_Components/NavButton_qml.cpp",
 		"/Users/halilyilmaz/SmartInventory/build/Qt_6_10_2_for_macOS-Debug/.rcc/qmlcache/appSmartInventory_Main_qml.cpp",
+		"/Users/halilyilmaz/SmartInventory/build/Qt_6_10_2_for_macOS-Debug/.rcc/qmlcache/appSmartInventory_Pages/DashboardScreen_qml.cpp",
+		"/Users/halilyilmaz/SmartInventory/build/Qt_6_10_2_for_macOS-Debug/.rcc/qmlcache/appSmartInventory_Pages/DeviceListScreen_qml.cpp",
+		"/Users/halilyilmaz/SmartInventory/build/Qt_6_10_2_for_macOS-Debug/.rcc/qmlcache/appSmartInventory_Scripts/DeviceApi_js.cpp",
 		"/Users/halilyilmaz/SmartInventory/build/Qt_6_10_2_for_macOS-Debug/.rcc/qmlcache/appSmartInventory_qmlcache_loader.cpp",
 		"/Users/halilyilmaz/SmartInventory/build/Qt_6_10_2_for_macOS-Debug/appsmartinventory_qmltyperegistrations.cpp"
 	],
@@ -998,9 +1006,13 @@
 	"UIC_SKIP" : 
 	[
 		"/Users/halilyilmaz/SmartInventory/build/Qt_6_10_2_for_macOS-Debug/.qt/rcc/qrc_appSmartInventory_raw_qml_0.cpp",
+		"/Users/halilyilmaz/SmartInventory/build/Qt_6_10_2_for_macOS-Debug/.qt/rcc/qrc_appSmartInventory_raw_qml_0_extra_qmldirs.cpp",
 		"/Users/halilyilmaz/SmartInventory/build/Qt_6_10_2_for_macOS-Debug/.qt/rcc/qrc_qmake_SmartInventory.cpp",
-		"/Users/halilyilmaz/SmartInventory/build/Qt_6_10_2_for_macOS-Debug/.rcc/qmlcache/appSmartInventory_DeviceApi_js.cpp",
+		"/Users/halilyilmaz/SmartInventory/build/Qt_6_10_2_for_macOS-Debug/.rcc/qmlcache/appSmartInventory_Components/NavButton_qml.cpp",
 		"/Users/halilyilmaz/SmartInventory/build/Qt_6_10_2_for_macOS-Debug/.rcc/qmlcache/appSmartInventory_Main_qml.cpp",
+		"/Users/halilyilmaz/SmartInventory/build/Qt_6_10_2_for_macOS-Debug/.rcc/qmlcache/appSmartInventory_Pages/DashboardScreen_qml.cpp",
+		"/Users/halilyilmaz/SmartInventory/build/Qt_6_10_2_for_macOS-Debug/.rcc/qmlcache/appSmartInventory_Pages/DeviceListScreen_qml.cpp",
+		"/Users/halilyilmaz/SmartInventory/build/Qt_6_10_2_for_macOS-Debug/.rcc/qmlcache/appSmartInventory_Scripts/DeviceApi_js.cpp",
 		"/Users/halilyilmaz/SmartInventory/build/Qt_6_10_2_for_macOS-Debug/.rcc/qmlcache/appSmartInventory_qmlcache_loader.cpp",
 		"/Users/halilyilmaz/SmartInventory/build/Qt_6_10_2_for_macOS-Debug/appsmartinventory_qmltyperegistrations.cpp"
 	],

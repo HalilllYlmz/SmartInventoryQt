@@ -2,6 +2,9 @@ module SmartInventory
 typeinfo appSmartInventory.qmltypes
 prefer :/qt/qml/SmartInventory/
 Main 254.0 Main.qml
-DeviceApi 254.0 DeviceApi.js
+DashboardScreen 254.0 Pages/DashboardScreen.qml
+DeviceApi 254.0 Scripts/DeviceApi.js
+NavButton 254.0 Components/NavButton.qml
+DeviceListScreen 254.0 Pages/DeviceListScreen.qml
 depends QtQuick
 

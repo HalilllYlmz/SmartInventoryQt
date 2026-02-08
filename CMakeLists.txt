@@ -16,7 +16,13 @@ qt_add_qml_module(appSmartInventory
     URI SmartInventory
     QML_FILES
         Main.qml
-        QML_FILES DeviceApi.js
+        QML_FILES
+        QML_FILES
+        QML_FILES Pages/DashboardScreen.qml
+        QML_FILES Scripts/DeviceApi.js
+        QML_FILES
+        QML_FILES Components/NavButton.qml
+        QML_FILES Pages/DeviceListScreen.qml
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.

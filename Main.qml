@@ -1,171 +1,79 @@
 import QtQuick
 import QtQuick.Layouts
 import QtQuick.Controls
-import "DeviceApi.js" as Api
+
+import "Components"
+import "Pages"
 
 Window {
-    width: 640
-    height: 480
+    width: 1024
+    height: 600
     visible: true
-    title: qsTr("Hello World")
+    title: qsTr("Smart Inventory System")
+    color: "#ecf0f1"
 
-    property int selectedDeviceId: -1
-
-    ListModel {
-        id: deviceModel
-    }
-
-    Component.onCompleted: refreshList()
-
-    function refreshList() {
-        Api.getDevices(function(devices) {
-            deviceModel.clear()
-            for (var i = 0; i < devices.length; i++) {
-                deviceModel.append(devices[i])
-            }
-        })
-    }
-
-    ColumnLayout {
+    RowLayout {
         anchors.fill: parent
-        anchors.margins: 20
-        spacing: 10
+        spacing: 0
 
-        GroupBox {
-            title: "Cihaz Bilgileri"
-            Layout.fillWidth: true
+        Rectangle {
+            Layout.preferredWidth: 250
+            Layout.fillHeight: true
+            color: "#2c3e50"
 
             ColumnLayout {
                 anchors.fill: parent
-                spacing: 10
+                anchors.margins: 10
+                spacing: 15
 
-                TextField {
-                    id: txtName
-                    placeholderText: "Device Name"
-                    Layout.fillWidth: true
+                Text {
+                    text: "SMART\nINVENTORY"
+                    color: "white"
+                    font.bold: true
+                    font.pixelSize: 24
+                    horizontalAlignment: Text.AlignHCenter
+                    Layout.alignment: Qt.AlignHCenter
+                    Layout.topMargin: 20
+                    Layout.bottomMargin: 20
                 }
-                TextField {
-                    id: txtSerial
-                    placeholderText: "Serial Number"
-                    Layout.fillWidth: true
+                NavButton {
+                    text: "Dashboard"
+                    icon: "📊"
+                    isActive: stackLayout.currentIndex === 0
+                    onClicked: stackLayout.currentIndex = 0
                 }
 
-                ComboBox {
-                    id: cmbStatus
-                    Layout.fillWidth: true
-                    model: ["Aktif", "Pasif", "Bakımda", "Arızalı"]
+                NavButton {
+                    text: "Cihaz Listesi"
+                    icon: "📱"
+                    isActive: stackLayout.currentIndex === 1
+                    onClicked: stackLayout.currentIndex = 1
                 }
 
-                RowLayout {
-                    Layout.fillWidth: true
-
-                    // EKLE BUTONU
-                    Button {
-                        text: "Ekle (POST)"
-                        Layout.fillWidth: true
-                        highlighted: true
-                        onClicked: {
-                            var newDevice = {
-                                "deviceName": txtName.text,
-                                "serialNumber": txtSerial.text,
-                                "status": cmbStatus.currentText,
-                                "lastMaintenanceDate": new Date().toISOString() // Şimdilik bugünün tarihi
-                            }
-
-                            Api.addDevice(newDevice, function() {
-                                clearInputs()
-                                refreshList()
-                            })
-                        }
-                    }
-
-                    // GÜNCELLE BUTONU
-                    Button {
-                        text: "Güncelle (PUT)"
-                        Layout.fillWidth: true
-                        enabled: selectedDeviceId !== -1 // Bir şey seçiliyse aktif olsun
-                        onClicked: {
-                            var updatedDevice = {
-                                "id": selectedDeviceId,
-                                "deviceName": txtName.text,
-                                "serialNumber": txtSerial.text,
-                                "status": cmbStatus.currentText,
-                                "lastMaintenanceDate": new Date().toISOString()
-                            }
-
-                            Api.updateDevice(selectedDeviceId, updatedDevice, function() {
-                                clearInputs()
-                                refreshList()
-                            })
-                        }
-                    }
-                }
-                Button {
-                    text: "Seçimi Temizle"
-                    visible: selectedDeviceId !== -1
-                    onClicked: clearInputs()
-                }
+                Item { Layout.fillHeight: true }
             }
-
         }
 
-        Text { text: "Cihaz Listesi"; font.bold: true; font.pixelSize: 16 }
 
-        ListView {
+        Rectangle {
             Layout.fillWidth: true
             Layout.fillHeight: true
-            model: deviceModel
-            clip: true
-            spacing: 5
+            color: "transparent"
 
-            delegate: Rectangle {
-                width: parent.width
-                height: 60
-                color: (model.id === selectedDeviceId) ? "#d5f5e3" : "#f2f3f4" // Seçiliyse yeşilimsi yap
-                radius: 5
-                border.color: "#bdc3c7"
+            StackLayout {
+                id: stackLayout
+                anchors.fill: parent
+                currentIndex: 0
 
-                MouseArea {
-                    anchors.fill: parent
-                    onClicked: {
-                        // Listeden bir öğeye tıklayınca bilgileri inputlara doldur
-                        selectedDeviceId = model.id
-                        txtName.text = model.deviceName
-                        txtSerial.text = model.serialNumber
-                        cmbStatus.currentIndex = cmbStatus.indexOfValue(model.status)
-                    }
+
+                DashboardScreen {
+
                 }
 
-                RowLayout {
-                    anchors.fill: parent
-                    anchors.margins: 10
+                DeviceListScreen {
 
-                    Column {
-                        Layout.fillWidth: true
-                        Text { text: model.deviceName; font.bold: true }
-                        Text { text: model.serialNumber + " | " + model.status; font.pixelSize: 12 }
-                    }
-
-                    // SİL BUTONU
-                    Button {
-                        text: "Sil"
-                        onClicked: {
-                            Api.deleteDevice(model.id, function() {
-                                if(selectedDeviceId === model.id) clearInputs()
-                                refreshList()
-                            })
-                        }
-                    }
                 }
             }
         }
     }
-
-    function clearInputs() {
-        selectedDeviceId = -1
-        txtName.text = ""
-        txtSerial.text = ""
-        cmbStatus.currentIndex = 0
-    }
-
 }
