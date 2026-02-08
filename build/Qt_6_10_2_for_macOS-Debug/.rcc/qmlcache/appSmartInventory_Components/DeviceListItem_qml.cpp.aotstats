@@ -18,7 +18,7 @@
                             "column": 5,
                             "durationMicroseconds": 0,
                             "functionName": "formatDate",
-                            "line": 21,
+                            "line": 20,
                             "message": "Functions without type annotations won't be compiled"
                         },
                         {
@@ -26,7 +26,7 @@
                             "column": 5,
                             "durationMicroseconds": 0,
                             "functionName": "getStatusColor",
-                            "line": 27,
+                            "line": 26,
                             "message": "function without return type annotation returns QString. This may prevent proper compilation to Cpp."
                         },
                         {
@@ -34,7 +34,7 @@
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 37,
+                            "line": 36,
                             "message": ""
                         },
                         {
@@ -42,7 +42,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 48,
+                            "line": 46,
                             "message": "method getStatusColor cannot be resolved."
                         },
                         {
@@ -50,7 +50,7 @@
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "alignment",
-                            "line": 55,
+                            "line": 52,
                             "message": ""
                         },
                         {
@@ -58,7 +58,7 @@
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 60,
+                            "line": 56,
                             "message": ""
                         },
                         {
@@ -66,7 +66,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "elide",
-                            "line": 64,
+                            "line": 60,
                             "message": ""
                         },
                         {
@@ -74,7 +74,7 @@
                             "column": 27,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 72,
+                            "line": 67,
                             "message": ""
                         },
                         {
@@ -82,7 +82,7 @@
                             "column": 27,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 80,
+                            "line": 75,
                             "message": ""
                         },
                         {
@@ -90,7 +90,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 81,
+                            "line": 76,
                             "message": "method getStatusColor cannot be resolved."
                         },
                         {
@@ -98,95 +98,103 @@
                             "column": 27,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 95,
+                            "line": 89,
                             "message": "method formatDate cannot be resolved."
                         },
                         {
                             "codegenResult": 2,
-                            "column": 24,
+                            "column": 32,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 115,
+                            "line": 109,
                             "message": "Could not find signal \"clicked\"."
                         },
                         {
                             "codegenResult": 0,
-                            "column": 31,
+                            "column": 39,
                             "durationMicroseconds": 0,
                             "functionName": "alignment",
-                            "line": 108,
+                            "line": 101,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
-                            "column": 24,
+                            "column": 32,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 111,
+                            "line": 104,
                             "message": "Cannot load property down from (component in /Users/halilyilmaz/SmartInventory/Components/DeviceListItem.qml)::parent with type QQuickItem."
                         },
                         {
                             "codegenResult": 2,
-                            "column": 20,
+                            "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "y",
-                            "line": 119,
+                            "line": 123,
                             "message": "Could not find property \"y\"."
                         },
                         {
                             "codegenResult": 2,
-                            "column": 20,
+                            "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "x",
-                            "line": 123,
+                            "line": 124,
                             "message": "Could not find property \"x\"."
                         },
                         {
                             "codegenResult": 2,
-                            "column": 34,
+                            "column": 35,
+                            "durationMicroseconds": 0,
+                            "functionName": "onClosed",
+                            "line": 127,
+                            "message": "Could not find signal \"closed\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 42,
                             "durationMicroseconds": 0,
                             "functionName": "onTriggered",
-                            "line": 128,
+                            "line": 133,
                             "message": "Could not find signal \"triggered\"."
                         },
                         {
                             "codegenResult": 2,
-                            "column": 34,
+                            "column": 42,
                             "durationMicroseconds": 0,
                             "functionName": "onTriggered",
-                            "line": 142,
+                            "line": 148,
                             "message": "Could not find signal \"triggered\"."
                         },
                         {
                             "codegenResult": 2,
-                            "column": 31,
+                            "column": 39,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 136,
+                            "line": 141,
                             "message": "Cannot load property text from (component in /Users/halilyilmaz/SmartInventory/Components/DeviceListItem.qml)::parent with type QQuickItem."
                         },
                         {
                             "codegenResult": 2,
-                            "column": 31,
+                            "column": 39,
                             "durationMicroseconds": 0,
                             "functionName": "font",
-                            "line": 138,
+                            "line": 143,
                             "message": "Cannot load property font from (component in /Users/halilyilmaz/SmartInventory/Components/DeviceListItem.qml)::parent with type QQuickItem."
                         },
                         {
                             "codegenResult": 0,
-                            "column": 46,
+                            "column": 54,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalAlignment",
-                            "line": 139,
+                            "line": 144,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
-                            "column": 44,
+                            "column": 52,
                             "durationMicroseconds": 0,
                             "functionName": "verticalAlignment",
-                            "line": 140,
+                            "line": 145,
                             "message": ""
                         }
                     ],

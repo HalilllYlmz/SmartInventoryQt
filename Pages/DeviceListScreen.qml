@@ -24,8 +24,6 @@ Item {
             }
         })
 
-        console.log(deviceModel)
-
     }
 
     ColumnLayout {

@@ -5,19 +5,18 @@ import QtQuick.Controls
 Rectangle {
     id: root
     width: parent.width
-    height: 90 // Yüksekliği biraz artırdık ki tarih sığsın
+    height: 90
     color: "white"
     radius: 10
 
     property string deviceName: "Cihaz Adı"
     property string serialNumber: "SN-12345"
     property string status: "Pasif"
-    property string maintenanceDate: "" // Yeni özellik
+    property string maintenanceDate: ""
 
     signal editClicked()
     signal deleteClicked()
 
-    // Tarihi formatlamak için yardımcı fonksiyon
     function formatDate(dateString) {
         if (!dateString) return "Belirtilmemiş";
         var date = new Date(dateString);
@@ -39,7 +38,6 @@ Rectangle {
         anchors.rightMargin: 15
         spacing: 15
 
-        // SOL: Renkli Durum Çubuğu
         Rectangle {
             width: 6
             Layout.fillHeight: true
@@ -49,13 +47,11 @@ Rectangle {
             radius: 4
         }
 
-        // ORTA: Bilgiler
         ColumnLayout {
             Layout.fillWidth: true
             Layout.alignment: Qt.AlignVCenter
             spacing: 4
 
-            // 1. Cihaz Adı
             Text {
                 text: root.deviceName
                 font.bold: true
@@ -65,7 +61,6 @@ Rectangle {
                 Layout.fillWidth: true
             }
 
-            // 2. Seri No ve Durum (Yan Yana)
             RowLayout {
                 spacing: 8
                 Text {
@@ -84,7 +79,6 @@ Rectangle {
                 }
             }
 
-            // 3. Son Bakım Tarihi (YENİ EKLENEN KISIM)
             RowLayout {
                 spacing: 5
                 Text {
@@ -99,49 +93,62 @@ Rectangle {
             }
         }
 
-        // SAĞ: Menü Butonu
-        // SAĞ: Menü Butonu
         ToolButton {
-            text: "⋮"
-            font.pixelSize: 24
-            font.bold: true
-            Layout.alignment: Qt.AlignRight | Qt.AlignVCenter
+                    id: menuButton
+                    text: "⋮"
+                    font.pixelSize: 24
+                    font.bold: true
+                    Layout.alignment: Qt.AlignRight | Qt.AlignVCenter
 
-            background: Rectangle {
-                color: parent.down ? "#ecf0f1" : "transparent"
-                radius: 5
-            }
-
-            onClicked: optionsMenu.open()
-
-            Menu {
-                id: optionsMenu
-                y: parent.height // Butonun hemen altından başla
-
-                // --- İŞTE BU SATIR SORUNU ÇÖZER ---
-                // Menüyü, kendi genişliği kadar sola çekiyoruz ki sağa taşmasın.
-                x: parent.width - width
-                // ----------------------------------
-
-                MenuItem {
-                    text: "✏️ Güncelle"
-                    onTriggered: root.editClicked()
-                }
-
-                MenuSeparator {}
-
-                MenuItem {
-                    text: "🗑️ Sil"
-                    contentItem: Text {
-                        text: parent.text
-                        color: "#e74c3c"
-                        font: parent.font
-                        horizontalAlignment: Text.AlignLeft
-                        verticalAlignment: Text.AlignVCenter
+                    background: Rectangle {
+                        color: parent.down ? "#ecf0f1" : "transparent"
+                        radius: 5
                     }
-                    onTriggered: root.deleteClicked()
+
+                    // ÇÖZÜM: Tıklama anında menüyü aç, ama Timer çalışıyorsa açma.
+                    onClicked: {
+                        if (!menuBlocker.running) {
+                            optionsMenu.open()
+                        }
+                    }
+
+                    // Bu Timer, menü kapandıktan sonra butonu kısa süre kilitler
+                    Timer {
+                        id: menuBlocker
+                        interval: 100 // 100 milisaniye bekle
+                    }
+
+                    Menu {
+                        id: optionsMenu
+                        y: parent.height
+                        x: parent.width - width
+
+                        // Menü kapandığı an Timer'ı başlat (kilidi devreye sok)
+                        onClosed: {
+                            menuBlocker.start()
+                        }
+
+                        MenuItem {
+                            text: "✏️ Güncelle"
+                            onTriggered: root.editClicked()
+                        }
+
+                        MenuSeparator {}
+
+                        MenuItem {
+                            text: "🗑️ Sil"
+                            contentItem: Text {
+                                text: parent.text
+                                color: "#e74c3c"
+                                font: parent.font
+                                horizontalAlignment: Text.AlignLeft
+                                verticalAlignment: Text.AlignVCenter
+                                leftPadding: 10
+                            }
+                            onTriggered: root.deleteClicked()
+                        }
+                    }
                 }
-            }
-        }
-    }
+
+       }
 }

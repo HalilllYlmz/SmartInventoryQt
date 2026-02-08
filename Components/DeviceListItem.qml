@@ -94,43 +94,58 @@ Rectangle {
         }
 
         ToolButton {
-            text: "⋮"
-            font.pixelSize: 24
-            font.bold: true
-            Layout.alignment: Qt.AlignRight | Qt.AlignVCenter
+                    id: menuButton
+                    text: "⋮"
+                    font.pixelSize: 24
+                    font.bold: true
+                    Layout.alignment: Qt.AlignRight | Qt.AlignVCenter
 
-            background: Rectangle {
-                color: parent.down ? "#ecf0f1" : "transparent"
-                radius: 5
-            }
-
-            onClicked: optionsMenu.open()
-
-            Menu {
-                id: optionsMenu
-                y: parent.height
-
-                x: parent.width - width
-
-                MenuItem {
-                    text: "✏️ Güncelle"
-                    onTriggered: root.editClicked()
-                }
-
-                MenuSeparator {}
-
-                MenuItem {
-                    text: "🗑️ Sil"
-                    contentItem: Text {
-                        text: parent.text
-                        color: "#e74c3c"
-                        font: parent.font
-                        horizontalAlignment: Text.AlignLeft
-                        verticalAlignment: Text.AlignVCenter
+                    background: Rectangle {
+                        color: parent.down ? "#ecf0f1" : "transparent"
+                        radius: 5
                     }
-                    onTriggered: root.deleteClicked()
+
+                    onClicked: {
+                        if (!menuBlocker.running) {
+                            optionsMenu.open()
+                        }
+                    }
+
+                    Timer {
+                        id: menuBlocker
+                        interval: 100
+                    }
+
+                    Menu {
+                        id: optionsMenu
+                        y: parent.height
+                        x: parent.width - width
+
+                        onClosed: {
+                            menuBlocker.start()
+                        }
+
+                        MenuItem {
+                            text: "✏️ Güncelle"
+                            onTriggered: root.editClicked()
+                        }
+
+                        MenuSeparator {}
+
+                        MenuItem {
+                            text: "🗑️ Sil"
+                            contentItem: Text {
+                                text: parent.text
+                                color: "#e74c3c"
+                                font: parent.font
+                                horizontalAlignment: Text.AlignLeft
+                                verticalAlignment: Text.AlignVCenter
+                                leftPadding: 10
+                            }
+                            onTriggered: root.deleteClicked()
+                        }
+                    }
                 }
-            }
-        }
-    }
+
+       }
 }
